@@ -44,8 +44,8 @@ app.get('/help',(req,res)=>{
 })
 app.get('/about',(req,res)=>{
     res.render('about.hbs',{
-        name : "ragini",
-        title : "about me"
+        name : "Ragini",
+        title : "About Me"
     })
 })
 app.get('/weather',(req,res)=>{
