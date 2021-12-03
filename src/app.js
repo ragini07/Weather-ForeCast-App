@@ -9,7 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 // express is function that returns object
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // console.log(__dirname);
 // console.log(__filename);

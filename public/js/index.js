@@ -7,7 +7,7 @@ const weatherOutput = document.querySelector("#output")
 
 searchBtn.addEventListener('click',(event) =>{
     event.preventDefault;
-    fetch('http://localhost:3000/weather?address='+locationInput.value)
+    fetch('/weather?address='+locationInput.value)
     .then(response => response.json())
     .then((data) => {
         if(data.errorMessage){
